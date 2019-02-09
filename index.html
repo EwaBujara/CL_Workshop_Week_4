@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head class="p-3 mb-2 bg-info text-white">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Workshop</title>
 </head>
-<body>
+<body class="p-3 mb-2 bg-success text-white">
 
+<form method="post" action="" id="bookForm">
+    <h4>Add New Book:</h4>
+    <input type="text" name="isbn" placeholder="isbn">
+    <p></p>
+    <input type="text" name="title" placeholder="Title">
+    <p></p>
+    <input type="text" name="author" placeholder="Author">
+    <p></p>
+    <input type="text" name="publisher" placeholder="Publisher">
+    <p></p>
+    <input type="text" name="type" placeholder="Type">
+    <p></p>
+    <input id="submit" class="btn btn-dark" type="submit" value="Send">
+</form>
+<p></p>
+<h4>Books List: </h4>
+<ul id="bookList">
+
+</ul>
+
+
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="js/app.js" type="text/javascript"></script>
 </body>
 </html>
